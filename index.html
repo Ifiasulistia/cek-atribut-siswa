@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Absensi & Cek Atribut Siswa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>Absensi & Cek Atribut Siswa</h2>
+
+        <label>Nama Siswa:</label>
+        <input type="text" id="nama" placeholder="Masukkan nama siswa">
+
+        <div class="atribut-group">
+            <label>Cek Atribut:</label>
+            <label><input type="checkbox" id="seragam"> Seragam Lengkap</label>
+            <label><input type="checkbox" id="kartu"> Kartu Pelajar</label>
+            <label><input type="checkbox" id="ikat"> Ikat Pinggang</label>
+            <label><input type="checkbox" id="sepatu"> Sepatu Hitam</label>
+        </div>
+
+        <button onclick="simpanAbsensi()">Simpan Absensi</button>
+
+        <h3>Data Absensi</h3>
+        <table id="tabelAbsensi">
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Nama</th>
+                    <th>Atribut</th>
+                    <th>Waktu</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
